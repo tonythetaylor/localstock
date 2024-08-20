@@ -1,0 +1,20 @@
+[
+  {
+    "userId": "3b0fd66b-a4d6-4d95-94e4-01940c99aedb",
+    "name": "Carly",
+    "email": "cvansalzberger0@cisco.com",
+    "lname": "Taylor",
+    "fname": "Anthony",
+    "roles": ["ADMIN"],
+    "password": "123456"
+  },
+  {
+    "userId": "d9d323fa-5c98-4222-a352-120e1f5e2798",
+    "name": "Inesita",
+    "email": "imcconnachie1@oaic.gov.au",
+    "lname": "Doe",
+    "fname": "John",
+    "roles": ["USER"],
+    "password": "123456"
+  }
+]
