@@ -1,51 +1,103 @@
-import NextAuth from 'next-auth';
-import Credentials from 'next-auth/providers/credentials';
-import { authConfig } from './auth.config';
-import { z } from 'zod';
-import { sql } from '@vercel/postgres';
-import type { User } from '@/state/api';
-import bcrypt from 'bcrypt';
-import axios from 'axios'
+import { DrizzleAdapter } from "@auth/drizzle-adapter"
+import type { NextAuthConfig } from "next-auth"
+import NextAuth from "next-auth"
+import { encode as defaultEncode } from "next-auth/jwt"
+import Credentials from "next-auth/providers/credentials"
+import Discord from "next-auth/providers/discord"
+import Facebook from "next-auth/providers/facebook"
+import Github from "next-auth/providers/github"
+import { v4 as uuid } from "uuid"
+import { db } from "./lib/db"
+import { redirect } from "next/navigation"
+import { getUserFromDb } from "../actions/user.actions"
 
-async function getUser(phone: string, password: string): Promise<User | undefined> {
-  try {
-    const response = await axios.post(`http://localhost:8000/auth/login`, {phone: phone, password: password}).then((res) =>{
-       console.log(res.data)
-       return res.data
-    }).catch(function (error) {
-      console.log("[ERROR] ", error);
-  });;
-   
-    return response;
-  } catch (error) {
-    console.error('Failed to fetch user:', error);
-    throw new Error('Failed to fetch user.');
-  }
+const adapter = DrizzleAdapter(db)
+
+export interface User {
+  userId: string;
+  name: string;
+  email: string;
+  phone: string;
+  password: string;
+  accessToken: string
 }
- 
-export const { auth, signIn, signOut } = NextAuth({
-  ...authConfig,
+
+const authConfig: NextAuthConfig = {
+  // adapter,
   providers: [
+    // Github({
+    //   clientId: process.env.GITHUB_ID!,
+    //   clientSecret: process.env.GITHUB_SECRET!,
+    // }),
+    // Facebook({
+    //   clientId: process.env.FACEBOOK_ID!,
+    //   clientSecret: process.env.FACEBOOK_SECRET!,
+    // }),
+    // Discord({
+    //   clientId: process.env.DISCORD_CLIENT_ID!,
+    //   clientSecret: process.env.DISCORD_CLIENT_SECRET!,
+    // }),
     Credentials({
+      credentials: {
+        phone: {},
+        password: {},
+      },
       async authorize(credentials) {
-        console.log("DEBUG : ", credentials)
-        const parsedCredentials = z
-          .object({ phone: z.string(), password: z.string().min(6) })
-          .safeParse(credentials);
- 
-        if (parsedCredentials.success) {
-          const { phone, password } = parsedCredentials.data;
-          const user = await getUser(phone, password);
-          if (!user) return null;
-          console.log('USER PASSWORD', user.accessToken)
+        // console.log(credentials)
+        const { phone, password } = credentials
+
+        const res = await getUserFromDb(phone as string, password as string)
+        if (!res) return null;
+          // console.log('USER PASSWORD', res.data.accessToken)
           // const passwordsMatch = await bcrypt.compare(password, user.password);
  
-          if (user.accessToken) return user;
-        }
- 
-        console.log('Invalid credentials');
-        return null;
+          if (res.data.accessToken) return res.data;
+
+
+        return null
       },
     }),
   ],
-});
+  callbacks: {
+    authorized({ auth, request: { nextUrl } }) {
+      // console.log('authorized : ', auth)
+      const isLoggedIn = !!auth?.user;
+      const isOnDashboard = nextUrl.pathname.startsWith('/');
+      if (isOnDashboard) {
+        if (isLoggedIn) return true;
+        return false; // Redirect unauthenticated users to login page
+      } else if (isLoggedIn) {
+        return Response.redirect(new URL('/dashboard', nextUrl));
+        
+      }
+      return true;
+    },
+  },
+  jwt: {
+    encode: async function (params) {
+      if (params.token?.credentials) {
+        const sessionToken = uuid()
+
+        if (!params.token.sub) {
+          throw new Error("No user ID found in token")
+        }
+
+        const createdSession = await adapter?.createSession?.({
+          sessionToken: sessionToken,
+          userId: params.token.sub,
+          expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days
+        })
+
+        if (!createdSession) {
+          throw new Error("Failed to create session")
+        }
+
+        return sessionToken
+      }
+      return defaultEncode(params)
+    },
+  },
+  secret: process.env.AUTH_TOKEN,
+}
+
+export const { handlers, signIn, signOut, auth } = NextAuth(authConfig)

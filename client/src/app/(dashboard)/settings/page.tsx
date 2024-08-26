@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Header from "@/app/(components)/Header";
+import SignOutButton from "@/app/(components)/SignOutButton";
 
 type UserSetting = {
   label: string;
@@ -79,6 +80,7 @@ const Settings = () => {
             ))}
           </tbody>
         </table>
+        <SignOutButton />
       </div>
     </div>
   );

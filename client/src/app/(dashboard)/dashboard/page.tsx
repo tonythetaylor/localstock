@@ -1,11 +1,11 @@
 "use client"
 
 import { CheckCircle, Package, Tag, TrendingDown, TrendingUp } from "lucide-react"
-import CardExpenseSummary from "./CardExpenseSummary"
-import CardPopularProducts from "./CardPopularProducts"
-import CardPurchaseSummary from "./CardPurchaseSummary"
-import CardSalesSumamry from "./CardSalesSumamry"
-import StatCard from "./StatCard"
+import CardExpenseSummary from "../CardExpenseSummary"
+import CardPopularProducts from "../CardPopularProducts"
+import CardPurchaseSummary from "../CardPurchaseSummary"
+import CardSalesSumamry from "../CardSalesSumamry"
+import StatCard from "../StatCard"
 
 const Dashboard = () => {
   return (
