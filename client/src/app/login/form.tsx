@@ -49,7 +49,7 @@ export default function LoginForm() {
 
  
   return (
-    <div className='h-screen flex items-center justify-center bg-neutral-400'>
+    <div className='h-screen flex items-center justify-center bg-white'>
     {/* <form action={formAction} onSubmit={form.handleSubmit(onSubmit)} className="space-y-3"> */}
     <form action={formAction} className="space-y-3 w-80">
       <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
