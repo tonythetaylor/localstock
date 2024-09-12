@@ -12097,3 +12097,128 @@
 
 [2024-09-12T00:55:09.561Z] info:  GET /products?   -  ms
 
+[2024-09-12T00:57:57.186Z] info:  OPTIONS /products   -  ms
+
+[2024-09-12T00:57:57.204Z] info:  POST /products   -  ms
+
+[2024-09-12T00:57:57.220Z] info:  GET /products?   -  ms
+
+[2024-09-12T00:58:09.145Z] info:  GET /products?   -  ms
+
+[2024-09-12T00:58:41.593Z] info:  GET /dashboard   -  ms
+
+[2024-09-12T00:58:52.900Z] info:  GET /users   -  ms
+
+[2024-09-12T00:59:02.204Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:01:21.061Z] info:  GET /dashboard   -  ms
+
+[2024-09-12T01:01:27.641Z] info:  GET /dashboard   -  ms
+
+[2024-09-12T01:01:30.454Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:01:31.731Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:01:35.138Z] info:  GET /users   -  ms
+
+[2024-09-12T01:01:41.371Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:01:49.374Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:01:59.326Z] info:  POST /auth/login   -  ms
+
+[2024-09-12T01:02:04.596Z] info:  GET /dashboard   -  ms
+
+[2024-09-12T01:02:32.171Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:02:37.258Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:02:41.110Z] info:  GET /users   -  ms
+
+[2024-09-12T01:02:42.288Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:03:26.363Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:06:54.404Z] info:  GET /dashboard   -  ms
+
+[2024-09-12T01:07:48.157Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:08:29.673Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:08:43.473Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:09:49.674Z] info:  GET /users   -  ms
+
+[2024-09-12T01:10:47.597Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:11:20.927Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:11:47.872Z] info:  GET /dashboard   -  ms
+
+[2024-09-12T01:15:20.916Z] info:  GET /dashboard   -  ms
+
+[2024-09-12T01:15:30.832Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:21:47.506Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:21:51.742Z] info:  GET /users   -  ms
+
+[2024-09-12T01:21:53.825Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:25:19.110Z] info:  GET /users   -  ms
+
+[2024-09-12T01:26:06.797Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:29:46.806Z] info:  GET /users   -  ms
+
+[2024-09-12T01:29:49.046Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:29:51.456Z] info:  GET /dashboard   -  ms
+
+[2024-09-12T01:31:26.072Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:31:26.883Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:32:18.309Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:32:19.498Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:32:23.321Z] info:  GET /users   -  ms
+
+[2024-09-12T01:32:25.872Z] info:  GET /dashboard   -  ms
+
+[2024-09-12T01:33:02.334Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:34:31.067Z] info:  GET /users   -  ms
+
+[2024-09-12T01:34:31.866Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:34:33.664Z] info:  GET /expenses   -  ms
+
+[2024-09-12T01:36:28.437Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:36:29.783Z] info:  GET /users   -  ms
+
+[2024-09-12T01:36:33.789Z] info:  GET /dashboard   -  ms
+
+[2024-09-12T01:36:34.769Z] info:  GET /products?   -  ms
+
+[2024-09-12T01:36:38.581Z] info:  GET /   -  ms
+
+[2024-09-12T01:36:38.586Z] error:  GET / 404 1681 - 3.875 ms  
+
+[2024-09-12T01:45:40.105Z] info:  GET /   -  ms
+
+[2024-09-12T01:45:40.114Z] error:  GET / 404 1681 - 7.828 ms  
+
+[2024-09-12T01:54:45.430Z] info:  GET /dashboard   -  ms
+
+{"level":"info","message":" GET /users   -  ms\n"}
+[22:06:16:616] [32minfo[39m:  GET /products?   -  ms
+
+[22:06:20:620] [32minfo[39m:  GET /dashboard   -  ms
+
+[22:09:34:934] [32minfo[39m:  GET /dashboard   -  ms
+
+[22:09:37:937] [32minfo[39m:  GET /users   -  ms
+

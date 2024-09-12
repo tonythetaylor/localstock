@@ -8,7 +8,8 @@ import ErrorHandler from "./middlewares/errorHandler"
 import { HttpException } from "./utils/httpExceptions"
 import Auth from "./middlewares/auth";
 import { errorHandler } from "./helpers/error-handler";
-import { errorMorgan, infoMorgan } from "./middlewares/morgan-middleware";
+// import { errorMorgan, infoMorgan } from "./middlewares/morgan-middleware";
+import morganMiddleware from "./middlewares/morgan-middleware";
 /* ROUTE IMPORTS */
 import dashboardRoutes from "./routes/dashboardRoutes";
 import productRoutes from "./routes/productRoutes";
@@ -20,17 +21,24 @@ import { Role } from "@prisma/client";
 /* CONFIGURATIONS */
 dotenv.config();
 const app = express();
+
+// Logging
+// app.use(errorMorgan);
+// app.use(infoMorgan);
+app.use(morganMiddleware)
 app.use(express.json());
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
-app.use(errorMorgan);
-app.use(infoMorgan);
-app.use(morgan("common"));
+
+// app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
-
+//Error handling
+app.use(ErrorHandler);
+app.use(errorHandler);
 /* ROUTES */
+
 const authMiddleware = new Auth();
 app.use("/dashboard", dashboardRoutes); // http://localhost:8000/dashboard
 app.use("/products", productRoutes); // http://localhost:8000/products
@@ -41,15 +49,13 @@ app.use("/users",
 app.use("/expenses", expenseRoutes); // http://localhost:8000/expenses
 app.use("/auth", AuthRoutes); // http://localhost:8000/auth
 
-app.use(errorHandler);
+
 
 //Handling not existing routes
 app.use((_req: Request, _res: Response, next: NextFunction) => {
   next(new HttpException(404, "Route not found"));
 });
 
-//Error handling
-app.use(ErrorHandler);
 
 /* SERVER */
 const port = Number(process.env.PORT) || 3001;

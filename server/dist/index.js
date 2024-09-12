@@ -17,12 +17,12 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
 const helmet_1 = __importDefault(require("helmet"));
-const morgan_1 = __importDefault(require("morgan"));
 const errorHandler_1 = __importDefault(require("./middlewares/errorHandler"));
 const httpExceptions_1 = require("./utils/httpExceptions");
 const auth_1 = __importDefault(require("./middlewares/auth"));
 const error_handler_1 = require("./helpers/error-handler");
-const morgan_middleware_1 = require("./middlewares/morgan-middleware");
+// import { errorMorgan, infoMorgan } from "./middlewares/morgan-middleware";
+const morgan_middleware_1 = __importDefault(require("./middlewares/morgan-middleware"));
 /* ROUTE IMPORTS */
 const dashboardRoutes_1 = __importDefault(require("./routes/dashboardRoutes"));
 const productRoutes_1 = __importDefault(require("./routes/productRoutes"));
@@ -33,15 +33,20 @@ const authRoutes_1 = require("./routes/authRoutes");
 /* CONFIGURATIONS */
 dotenv_1.default.config();
 const app = (0, express_1.default)();
+// Logging
+// app.use(errorMorgan);
+// app.use(infoMorgan);
+app.use(morgan_middleware_1.default);
 app.use(express_1.default.json());
 app.use((0, helmet_1.default)());
 app.use(helmet_1.default.crossOriginResourcePolicy({ policy: "cross-origin" }));
-app.use(morgan_middleware_1.errorMorgan);
-app.use(morgan_middleware_1.infoMorgan);
-app.use((0, morgan_1.default)("common"));
+// app.use(morgan("common"));
 app.use(body_parser_1.default.json());
 app.use(body_parser_1.default.urlencoded({ extended: false }));
 app.use((0, cors_1.default)());
+//Error handling
+app.use(errorHandler_1.default);
+app.use(error_handler_1.errorHandler);
 /* ROUTES */
 const authMiddleware = new auth_1.default();
 app.use("/dashboard", dashboardRoutes_1.default); // http://localhost:8000/dashboard
@@ -52,13 +57,10 @@ app.use("/users",
 userRoutes_1.default); // http://localhost:8000/users
 app.use("/expenses", expenseRoutes_1.default); // http://localhost:8000/expenses
 app.use("/auth", authRoutes_1.AuthRoutes); // http://localhost:8000/auth
-app.use(error_handler_1.errorHandler);
 //Handling not existing routes
 app.use((_req, _res, next) => {
     next(new httpExceptions_1.HttpException(404, "Route not found"));
 });
-//Error handling
-app.use(errorHandler_1.default);
 /* SERVER */
 const port = Number(process.env.PORT) || 3001;
 const initializeApp = () => __awaiter(void 0, void 0, void 0, function* () {

@@ -17,7 +17,6 @@ export const authConfig = {
         //   return true;
         // },
         async jwt({ token, user, account }) {
-          console.log(token)
           if (account?.provider === "credentials") {
             token.credentials = true
           }
