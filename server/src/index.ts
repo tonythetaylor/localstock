@@ -7,6 +7,8 @@ import morgan from "morgan";
 import ErrorHandler from "./middlewares/errorHandler"
 import { HttpException } from "./utils/httpExceptions"
 import Auth from "./middlewares/auth";
+import { errorHandler } from "./helpers/error-handler";
+import { errorMorgan, infoMorgan } from "./middlewares/morgan-middleware";
 /* ROUTE IMPORTS */
 import dashboardRoutes from "./routes/dashboardRoutes";
 import productRoutes from "./routes/productRoutes";
@@ -21,6 +23,8 @@ const app = express();
 app.use(express.json());
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
+app.use(errorMorgan);
+app.use(infoMorgan);
 app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -37,7 +41,7 @@ app.use("/users",
 app.use("/expenses", expenseRoutes); // http://localhost:8000/expenses
 app.use("/auth", AuthRoutes); // http://localhost:8000/auth
 
-
+app.use(errorHandler);
 
 //Handling not existing routes
 app.use((_req: Request, _res: Response, next: NextFunction) => {

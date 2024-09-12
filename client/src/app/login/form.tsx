@@ -12,7 +12,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { login } from '../../../actions/user.actions';
-import { LoginSchema } from '../../../schemas/login-schema';
+import { LoginSchema } from '../../schemas/login-schema';
 import { useRouter } from "next/navigation"
 import Link from 'next/link';
 
@@ -49,7 +49,7 @@ export default function LoginForm() {
 
  
   return (
-    <div className='h-screen flex items-center justify-center'>
+    <div className='h-screen flex items-center justify-center bg-neutral-400'>
     {/* <form action={formAction} onSubmit={form.handleSubmit(onSubmit)} className="space-y-3"> */}
     <form action={formAction} className="space-y-3 w-80">
       <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
@@ -120,7 +120,7 @@ export default function LoginForm() {
       </div>
       <div className="mt-4 text-center text-sm">
           Don't have an account?
-          <Link className="underline ml-2" href="signup">
+          <Link className="underline ml-2" href="register">
             Sign Up
           </Link>
         </div>

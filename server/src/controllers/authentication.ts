@@ -1,5 +1,6 @@
 import type { Request, Response, NextFunction, CookieOptions } from "express";
 import AuthService from "../services/authService";
+import { ApiError } from "../helpers/api-error";
 
 const COOKIE_OPTIONS: CookieOptions = {
   httpOnly: true,
@@ -18,6 +19,7 @@ export default class AuthController {
   async login(req: Request, res: Response, next: NextFunction) {
     try {
       const { accessToken, refreshToken } = await this.authService.login(req.body);
+
       res
         .cookie("jwt", refreshToken, COOKIE_OPTIONS)
         .status(200)

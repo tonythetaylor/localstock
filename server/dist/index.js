@@ -21,6 +21,8 @@ const morgan_1 = __importDefault(require("morgan"));
 const errorHandler_1 = __importDefault(require("./middlewares/errorHandler"));
 const httpExceptions_1 = require("./utils/httpExceptions");
 const auth_1 = __importDefault(require("./middlewares/auth"));
+const error_handler_1 = require("./helpers/error-handler");
+const morgan_middleware_1 = require("./middlewares/morgan-middleware");
 /* ROUTE IMPORTS */
 const dashboardRoutes_1 = __importDefault(require("./routes/dashboardRoutes"));
 const productRoutes_1 = __importDefault(require("./routes/productRoutes"));
@@ -34,6 +36,8 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, helmet_1.default)());
 app.use(helmet_1.default.crossOriginResourcePolicy({ policy: "cross-origin" }));
+app.use(morgan_middleware_1.errorMorgan);
+app.use(morgan_middleware_1.infoMorgan);
 app.use((0, morgan_1.default)("common"));
 app.use(body_parser_1.default.json());
 app.use(body_parser_1.default.urlencoded({ extended: false }));
@@ -48,6 +52,7 @@ app.use("/users",
 userRoutes_1.default); // http://localhost:8000/users
 app.use("/expenses", expenseRoutes_1.default); // http://localhost:8000/expenses
 app.use("/auth", authRoutes_1.AuthRoutes); // http://localhost:8000/auth
+app.use(error_handler_1.errorHandler);
 //Handling not existing routes
 app.use((_req, _res, next) => {
     next(new httpExceptions_1.HttpException(404, "Route not found"));

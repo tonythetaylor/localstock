@@ -22,7 +22,7 @@ const Navbar = () => {
     const toggleDarkMode = () => {
         dispatch(setIsDarkMode(!isDarkMode))
     } 
-    console.log(isDarkMode)
+
     return (
         <div className="flex justify-between items-center w-full mb-7">
             {/* LEFT SIDE */}

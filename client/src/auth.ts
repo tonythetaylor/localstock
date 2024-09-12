@@ -58,21 +58,21 @@ const authConfig: NextAuthConfig = {
       },
     }),
   ],
-  callbacks: {
-    authorized({ auth, request: { nextUrl } }) {
-      // console.log('authorized : ', auth)
-      const isLoggedIn = !!auth?.user;
-      const isOnDashboard = nextUrl.pathname.startsWith('/');
-      if (isOnDashboard) {
-        if (isLoggedIn) return true;
-        return false; // Redirect unauthenticated users to login page
-      } else if (isLoggedIn) {
-        return Response.redirect(new URL('/dashboard', nextUrl));
+  // callbacks: {
+  //   authorized({ auth, request: { nextUrl } }) {
+  //     // console.log('authorized : ', auth)
+  //     const isLoggedIn = !!auth?.user;
+  //     const isOnDashboard = nextUrl.pathname.startsWith('/');
+  //     if (isOnDashboard) {
+  //       if (isLoggedIn) return true;
+  //       return false; // Redirect unauthenticated users to login page
+  //     } else if (isLoggedIn) {
+  //       return Response.redirect(new URL('/', nextUrl));
         
-      }
-      return true;
-    },
-  },
+  //     }
+  //     return true;
+  //   },
+  // },
   jwt: {
     encode: async function (params) {
       if (params.token?.credentials) {

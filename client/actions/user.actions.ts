@@ -1,15 +1,15 @@
 "use server"
 
 import { signIn, signOut } from "@/auth"
-// import { db } from "@/lib/db"
+import { db } from "@/lib/db"
 import { user } from "@/lib/schema"
 
 // import { eq } from "drizzle-orm"
 import axios from 'axios'
 
 import bcryptjs from "bcryptjs"
-import { LoginSchema } from "../schemas/login-schema"
-import { RegisterSchema } from "../schemas/register-schema"
+import { LoginSchema } from "../src/schemas/login-schema"
+import { RegisterSchema } from "../src/schemas/register-schema"
 
 export async function getUserFromDb(phone: string, password: string) {
   try {
@@ -87,53 +87,53 @@ export async function loginWithFacebook() {
   })
 }
 
-// export async function register({
-//   phone,
-//   password,
-//   confirmPassword,
-// }: {
-//   phone: string
-//   password: string
-//   confirmPassword: string
-// }) {
-//   try {
-//     RegisterSchema.parse({
-//       phone,
-//       password,
-//       confirmPassword,
-//     })
-//     // get user from db
-//     const existedUser = await getUserFromDb(phone, password)
-//     if (existedUser.success) {
-//       return {
-//         success: false,
-//         message: "User already exists.",
-//       }
-//     }
-//     const hash = await bcryptjs.hash(password, 10)
+export async function register({
+  phone,
+  password,
+  confirmPassword,
+}: {
+  phone: string
+  password: string
+  confirmPassword: string
+}) {
+  try {
+    RegisterSchema.parse({
+      phone,
+      password,
+      confirmPassword,
+    })
+    // get user from db
+    const existedUser = await getUserFromDb(phone, password)
+    if (existedUser.success) {
+      return {
+        success: false,
+        message: "User already exists.",
+      }
+    }
+    const hash = await bcryptjs.hash(password, 10)
 
-//     const [insertedUser] = await db
-//       .insert(user)
-//       .values({
-//         phone,
-//         password: hash,
-//       })
-//       .returning({
-//         userId: user.userId,
-//         phone: user.phone,
-//       })
+    const [insertedUser] = await db
+      .insert(user)
+      .values({
+        phone,
+        password: hash,
+      })
+      .returning({
+        userId: user.userId,
+        phone: user.phone,
+      })
 
-//     return {
-//       success: true,
-//       data: insertedUser,
-//     }
-//   } catch (error: any) {
-//     return {
-//       success: false,
-//       message: error.message,
-//     }
-//   }
-// }
+    return {
+      success: true,
+      data: insertedUser,
+    }
+  } catch (error: any) {
+    return {
+      success: false,
+      message: error.message,
+    }
+  }
+}
 
 export async function logout() {
   try {

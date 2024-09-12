@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Header from "@/app/(components)/Header";
 import SignOutButton from "@/app/(components)/SignOutButton";
+import { useSession } from "next-auth/react";
+// import { FormEvent } from 'react';
 
 type UserSetting = {
   label: string;
@@ -20,12 +22,22 @@ const mockSettings: UserSetting[] = [
 
 const Settings = () => {
   const [userSettings, setUserSettings] = useState<UserSetting[]>(mockSettings);
-
+//  const session = useSession()
   const handleToggleChange = (index: number) => {
     const settingsCopy = [...userSettings];
     settingsCopy[index].value = !settingsCopy[index].value as boolean;
     setUserSettings(settingsCopy);
   };
+
+  // console.log('DEBUG:::: ', session)
+  // const formData = new FormData(e.currentTarget); 
+  // const response = await fetch(`http://localhost:8000/users/${}`, {
+  //   method: 'POST',
+  //   body: JSON.stringify({
+  //     email: formData.get('email'),
+  //     password: formData.get('password'),
+  //   }),
+  // });
 
   return (
     <div className="w-full">
