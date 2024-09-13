@@ -1,0 +1,113 @@
+[2024-09-13T04:05:04.438Z] info: GET /dashboard 304  -
+[2024-09-13T04:05:41.277Z] info: GET /dashboard 304  -
+[2024-09-13T04:08:00.376Z] info: GET /dashboard 304  -
+[2024-09-13T04:09:25.943Z] info: GET /dashboard 304  -
+[2024-09-13T04:21:01.394Z] info: GET /dashboard 304  -
+[2024-09-13T04:21:21.120Z] info: GET /dashboard 304  -
+[2024-09-13T04:21:34.335Z] info: GET /dashboard 304  -
+[2024-09-13T04:23:13.595Z] info: GET /dashboard 304  -
+[2024-09-13T04:26:10.559Z] info: GET /dashboard 304  -
+[2024-09-13T04:27:07.600Z] info: GET /products? 304  -
+[2024-09-13T04:27:09.313Z] info: GET /products? 304  -
+[2024-09-13T04:27:10.646Z] info: GET /users 304  -
+[2024-09-13T04:27:13.994Z] info: GET /expenses 304  -
+[2024-09-13T04:28:09.280Z] info: GET /users 304  -
+[2024-09-13T04:28:11.445Z] info: GET /dashboard 304  -
+[2024-09-13T04:29:16.532Z] info: GET /dashboard 304  -
+[2024-09-13T04:29:19.906Z] info: GET /products? 304  -
+[2024-09-13T04:29:21.912Z] info: GET /products? 304  -
+[2024-09-13T04:29:23.603Z] info: GET /users 304  -
+[2024-09-13T04:29:26.777Z] info: GET /expenses 304  -
+[2024-09-13T04:32:55.812Z] info: GET /dashboard 304  -
+[2024-09-13T04:32:57.984Z] info: GET /products? 304  -
+[2024-09-13T04:32:59.156Z] info: GET /products? 304  -
+[2024-09-13T04:33:00.846Z] info: GET /users 304  -
+[2024-09-13T04:33:37.752Z] info: GET /expenses 304  -
+[2024-09-13T04:34:08.833Z] info: GET /expenses 304  -
+[2024-09-13T04:34:10.773Z] info: GET /dashboard 304  -
+[2024-09-13T04:34:12.349Z] info: GET /products? 304  -
+[2024-09-13T04:34:13.467Z] info: GET /products? 304  -
+[2024-09-13T04:34:14.764Z] info: GET /users 304  -
+[2024-09-13T04:34:51.499Z] info: GET /dashboard 304  -
+[2024-09-13T04:35:43.559Z] info: GET /dashboard 304  -
+[2024-09-13T04:35:46.083Z] info: GET /products? 304  -
+[2024-09-13T04:35:47.132Z] info: GET /products? 304  -
+[2024-09-13T04:36:30.090Z] info: GET /products? 304  -
+[2024-09-13T04:37:22.292Z] info: GET /products? 304  -
+[2024-09-13T04:37:24.102Z] info: GET /dashboard 304  -
+[2024-09-13T04:37:25.539Z] info: GET /products? 304  -
+[2024-09-13T04:37:27.163Z] info: GET /users 304  -
+[2024-09-13T04:38:27.098Z] info: GET /expenses 304  -
+[2024-09-13T04:38:45.020Z] info: GET /products? 304  -
+[2024-09-13T04:38:47.997Z] info: GET /dashboard 304  -
+[2024-09-13T04:39:50.848Z] info: GET /products? 304  -
+[2024-09-13T04:40:26.894Z] info: GET /users 304  -
+[2024-09-13T04:40:28.470Z] info: GET /expenses 304  -
+[2024-09-13T04:40:39.880Z] info: GET /dashboard 304  -
+[2024-09-13T04:40:42.003Z] info: GET /products? 304  -
+[2024-09-13T04:41:18.176Z] info: GET /products? 304  -
+[2024-09-13T04:41:20.687Z] info: GET /dashboard 304  -
+[2024-09-13T04:41:22.756Z] info: GET /products? 304  -
+[2024-09-13T04:41:26.628Z] info: GET /users 304  -
+[2024-09-13T04:41:29.525Z] info: GET /expenses 304  -
+[2024-09-13T04:42:29.077Z] info: GET /expenses 304  -
+[2024-09-13T04:42:30.871Z] info: GET /dashboard 304  -
+[2024-09-13T04:42:32.375Z] info: GET /products? 304  -
+[2024-09-13T04:42:33.943Z] info: GET /products? 304  -
+[2024-09-13T04:43:49.248Z] info: GET /products? 304  -
+[2024-09-13T04:44:20.380Z] info: GET /dashboard 304  -
+[2024-09-13T04:44:36.018Z] info: GET /dashboard 304  -
+[2024-09-13T04:45:24.683Z] info: GET /products? 304  -
+[2024-09-13T04:45:28.662Z] info: GET /products? 304  -
+[2024-09-13T04:48:16.137Z] info: GET /dashboard 304  -
+[2024-09-13T04:48:22.014Z] info: GET /products? 304  -
+[2024-09-13T04:50:55.953Z] info: GET /products? 304  -
+[2024-09-13T04:51:02.902Z] info: GET /products? 304  -
+[2024-09-13T04:51:29.569Z] info: GET /products? 304  -
+[2024-09-13T04:51:31.550Z] info: GET /dashboard 304  -
+[2024-09-13T04:51:33.933Z] info: GET /products? 304  -
+[2024-09-13T04:51:36.759Z] info: GET /users 304  -
+[2024-09-13T04:51:46.722Z] info: GET /expenses 304  -
+[2024-09-13T04:53:13.627Z] info: GET /dashboard 304  -
+[2024-09-13T04:54:09.024Z] info: GET /products? 304  -
+[2024-09-13T04:54:36.838Z] info: GET /dashboard 304  -
+[2024-09-13T04:55:36.806Z] info: GET /expenses 304  -
+[2024-09-13T04:55:40.591Z] info: GET /users 304  -
+[2024-09-13T04:55:41.631Z] info: GET /products? 304  -
+[2024-09-13T04:56:50.762Z] info: POST /auth/login 200 215 -
+[2024-09-13T04:56:55.914Z] info: GET /dashboard 304  -
+[2024-09-13T04:57:41.537Z] info: GET /dashboard 304  -
+[2024-09-13T04:57:58.219Z] info: POST /auth/login 200 215 -
+[2024-09-13T04:58:03.355Z] info: GET /dashboard 304  -
+[2024-09-13T04:58:17.543Z] info: GET /dashboard 304  -
+[2024-09-13T04:59:16.071Z] info: POST /auth/login 200 215 -
+[2024-09-13T04:59:21.212Z] info: GET /dashboard 304  -
+[2024-09-13T05:00:34.551Z] info: GET /dashboard 304  -
+[2024-09-13T05:01:26.261Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:01:28.972Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:01:42.272Z] info: GET /dashboard 304  -
+[2024-09-13T05:03:04.301Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:03:17.706Z] info: GET /dashboard 304  -
+[2024-09-13T05:04:22.289Z] info: GET /dashboard 304  -
+[2024-09-13T05:05:19.394Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:05:32.723Z] info: GET /dashboard 304  -
+[2024-09-13T05:06:08.666Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:06:21.974Z] info: GET /dashboard 304  -
+[2024-09-13T05:06:40.560Z] info: GET /dashboard 304  -
+[2024-09-13T05:07:16.384Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:07:38.424Z] info: GET /dashboard 304  -
+[2024-09-13T05:08:57.065Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:09:15.559Z] info: GET /dashboard 304  -
+[2024-09-13T05:09:56.127Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:10:01.308Z] info: GET /dashboard 304  -
+[2024-09-13T05:10:23.190Z] info: GET /dashboard 304  -
+[2024-09-13T05:10:31.472Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:10:36.611Z] info: GET /dashboard 304  -
+[2024-09-13T05:11:24.547Z] info: GET /dashboard 304  -
+[2024-09-13T05:11:38.450Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:11:43.591Z] info: GET /dashboard 304  -
+[2024-09-13T05:12:04.542Z] info: GET /dashboard 304  -
+[2024-09-13T05:12:42.645Z] info: GET /dashboard 304  -
+[2024-09-13T05:12:55.316Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:13:00.463Z] info: GET /dashboard 304  -
+[2024-09-13T05:13:16.546Z] info: GET /dashboard 304  -

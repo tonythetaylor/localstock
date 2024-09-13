@@ -18,6 +18,7 @@
     "@types/bcrypt": "^5.0.2",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/winston": "^2.4.4",
+    "app-root-path": "^3.1.0",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
     "concurrently": "^8.2.2",

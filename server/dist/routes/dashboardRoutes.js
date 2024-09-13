@@ -1,13 +1,19 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const dashboardController_1 = require("../controllers/dashboardController");
-const morgan_middleware_1 = __importDefault(require("../middlewares/morgan-middleware"));
 const router = (0, express_1.Router)();
-console.log(morgan_middleware_1.default);
 router.get("/", dashboardController_1.getDashboardMetrics);
-// router.get("/logs", morganMiddleware)
+router.get("/logs", (req, res, next) => {
+    var fs = require('fs');
+    const string = fs.readFileSync(__dirname + "/all.log", "utf8");
+    console.log('looking for file', string);
+    res.send(string);
+    // res.send('GET request to the homepage')
+    // fs.readFileSync(__dirname + "/all.log", "utf8", function (err: any, data: any) {
+    //     if (err) throw err;
+    //     var resultArray = data//do operation on data that generates say resultArray;
+    //     res.send(resultArray);
+    // }); next()
+});
 exports.default = router;

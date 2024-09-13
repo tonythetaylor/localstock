@@ -1,14 +1,14 @@
 import morgan, { StreamOptions } from "morgan";
 
 import { IncomingMessage } from "http";
+import   logger   from "../services/logger.service";
 
-import Logger from "../services/logger.service";
 
 // Override the stream method by telling
 // Morgan to use our custom logger instead of the console.log.
 const stream: StreamOptions = {
     // Use the http severity
-    write: (message) => Logger.http(message),
+    write: (message) => logger.http(message),
   };
   
   // Skip all the Morgan http log if the 

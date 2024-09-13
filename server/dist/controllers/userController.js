@@ -17,6 +17,7 @@ const userService_1 = __importDefault(require("../services/userService"));
 const users_1 = require("../db/users");
 const userService = new userService_1.default();
 const client_1 = require("@prisma/client");
+const api_error_1 = require("../utils/api-error");
 const prisma = new client_1.PrismaClient();
 const getUsers = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
@@ -80,6 +81,8 @@ exports.create = create;
 const updateUser = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const user = yield userService.update(req.params.id, req.body);
+        if (!user)
+            throw new api_error_1.ApiError('User not found', 404);
         res.status(200).json({ user });
     }
     catch (err) {

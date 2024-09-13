@@ -4,6 +4,8 @@ import "./globals.css";
 // import { SigninForm } from "./(components)/SignInForm";
 import { SessionProvider } from "next-auth/react"
 import DashboardWrapper from "./(dashboard)/dashboardWrapper";
+import { Suspense } from "react";
+import Loading from "./loading";
 // import { auth } from "@/auth";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,7 +23,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      {children}
+        {children}     
         {/* <DashboardWrapper>{children}</DashboardWrapper> */}
       </body>
     </html>

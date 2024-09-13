@@ -5,6 +5,7 @@ import { authentication, random } from '../helpers';
 
 const userService = new UserService();
 import { PrismaClient } from "@prisma/client";
+import { ApiError } from "../utils/api-error";
 
 const prisma = new PrismaClient();
 
@@ -68,6 +69,8 @@ export const create = async (req: Request, res: Response, next: NextFunction) =>
 export const updateUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const user = await userService.update(req.params.id, req.body);
+    if (!user) throw new ApiError('User not found', 404)
+
     res.status(200).json({ user });
   } catch (err) {
     next(err);

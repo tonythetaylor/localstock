@@ -1,75 +1,72 @@
-import winston from 'winston'
+import winston from 'winston';
+import 'winston-daily-rotate-file';
 
-// Define your severity levels. 
-// With them, You can create log files, 
-// see or hide levels based on the running ENV.
-const levels = {
-  error: 0,
-  warn: 1,
-  info: 2,
-  http: 3,
-  debug: 4,
-}
+const fileFormat = winston.format.combine(
+    winston.format.colorize(),
+    winston.format.uncolorize(),
+    winston.format.timestamp({
+        format: 'YYYY-MM-DD HH:mm:ss',
+    }),
+    winston.format.prettyPrint({
+        depth: 5
+    }),
+    winston.format.printf((info) => `${info.timestamp} ${info.level}: ${info.message}`),
+);
 
-// This method set the current severity based on 
-// the current NODE_ENV: show all the log levels 
-// if the server was run in development mode; otherwise, 
-// if it was run in production, show only warn and error messages.
-const level = () => {
-  const env = process.env.NODE_ENV || 'development'
-  const isDevelopment = env === 'development'
-  return isDevelopment ? 'debug' : 'warn'
-}
+const consoleFormat = winston.format.combine(
+    winston.format.colorize(),
+    winston.format.timestamp({
+        format: 'YYYY-MM-DD HH:mm:ss',
+    }),
+    winston.format.prettyPrint({
+        depth: 5
+    }),
+    winston.format.printf((info) => `${info.timestamp} ${info.level}: ${info.message}`),
+);
 
-// Define different colors for each level. 
-// Colors make the log message more visible,
-// adding the ability to focus or ignore messages.
-const colors = {
-  error: 'red',
-  warn: 'yellow',
-  info: 'green',
-  http: 'magenta',
-  debug: 'white',
-}
+const consoleTransport = new winston.transports.Console({
+    format: consoleFormat,
+});
 
-// Tell winston that you want to link the colors 
-// defined above to the severity levels.
-winston.addColors(colors)
+const combinedFileTransport = new winston.transports.DailyRotateFile({
+    filename: '%DATE%_combined.log',
+    format: fileFormat, //format means - how the log should be formatted
+    datePattern: 'YYYY-MM-DD-HH',
+    maxSize: '2m',
+    dirname: './logs/combined',
+    maxFiles: '14d',
+});
 
-// Chose the aspect of your log customizing the log format.
-const format = winston.format.combine(
-  // Add the message timestamp with the preferred format
-  winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss:ms' }),
-  // Tell Winston that the logs must be colored
-  winston.format.colorize({ all: false }),
-  // Define the format of the message showing the timestamp, the level and the message
-  winston.format.printf(
-    (info) => `${info.timestamp} ${info.level}: ${info.message.trim()}`,
-  ),
-)
-
-// Define which transports the logger must use to print out messages. 
-// In this example, we are using three different transports 
-const transports = [
-  // Allow the use the console to print the messages
-  new winston.transports.Console(),
-  // Allow to print all the error level messages inside the error.log file
-  new winston.transports.File({
-    filename: 'logs/error.log',
+const errorFileTransport = new winston.transports.DailyRotateFile({
+    filename: '%DATE%_error.log',
     level: 'error',
-  }),
-  // Allow to print all the error message inside the all.log file
-  // (also the error log that are also printed inside the error.log(
-  new winston.transports.File({ filename: 'logs/all.log' }),
-]
+    format: fileFormat, //format means - how the log should be formatted
+    datePattern: 'YYYY-MM-DD-HH',
+    maxSize: '2m',
+    dirname: './logs/errors',
+    maxFiles: '14d',
+});
 
-// Create the logger instance that has to be exported 
-// and used to log messages.
-const Logger = winston.createLogger({
-  level: level(),
-  levels,
-  format,
-  transports,
-})
+const httpTransport = new winston.transports.Http({
+    format: winston.format.json(),
+    host: 'localhost',
+    port: 4000,
+    path: '/logs',
+    ssl: false,
+    batch: true,
+    batchCount: 10,
+    batchInterval: 10000,
+});
 
-export default Logger
+
+const logger = winston.createLogger({
+    levels: winston.config.syslog.levels,
+    transports: [
+        errorFileTransport,
+        combinedFileTransport,
+        consoleTransport,
+        httpTransport,
+    ],
+});
+
+export default logger;

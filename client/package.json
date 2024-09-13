@@ -31,6 +31,7 @@
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.33.0",
+    "framer-motion": "^11.5.4",
     "input": "^1.0.1",
     "jose": "^5.7.0",
     "label": "^0.2.2",

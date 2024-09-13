@@ -1,0 +1,52 @@
+[2024-09-13T03:22:06.977Z] info:  GET /dashboard 304  - 
+
+[2024-09-13T03:22:12.425Z] info:  GET /products? 304  - 
+
+[2024-09-13T03:22:17.267Z] info:  GET /expenses 304  - 
+
+[2024-09-13T03:23:52.489Z] [32minfo[39m:  GET /dashboard 304  - 
+
+[2024-09-13T03:23:54.466Z] [32minfo[39m:  GET /products? 304  - 
+
+[2024-09-13T03:23:56.305Z] [32minfo[39m:  GET /products? 304  - 
+
+[2024-09-13T03:24:09.612Z] [32minfo[39m:  OPTIONS /products 204 0 - 
+
+[2024-09-13T03:24:09.632Z] [32minfo[39m:  POST /products 201 118 - 
+
+[2024-09-13T03:24:09.639Z] [32minfo[39m:  GET /products? 200 4786 - 
+
+[2024-09-13T03:24:56.050Z] [32minfo[39m: GET /products? 304  -
+[2024-09-13T03:24:56.817Z] [32minfo[39m: GET /dashboard 304  -
+[2024-09-13T03:27:28.842Z] info: GET /dashboard 304  -
+[2024-09-13T03:28:17.538Z] info: GET /dashboard 304  -
+[2024-09-13T03:33:06.892Z] info: GET /products? 304  -
+[2024-09-13T03:33:07.997Z] info: GET /products? 304  -
+[2024-09-13T03:33:20.852Z] info: POST /auth/login 200 215 -
+[2024-09-13T03:33:25.946Z] info: GET /dashboard 304  -
+[2024-09-13T03:39:06.393Z] info: GET /dashboard 304  -
+[2024-09-13T03:39:09.516Z] info: GET /products? 304  -
+[2024-09-13T03:39:11.860Z] info: GET /products? 304  -
+[2024-09-13T03:39:21.759Z] info: POST /auth/login 200 215 -
+[2024-09-13T03:39:26.867Z] info: GET /dashboard 304  -
+[2024-09-13T03:40:43.439Z] info: GET /dashboard 304  -
+[2024-09-13T03:40:56.543Z] info: POST /auth/login 200 215 -
+[2024-09-13T03:41:01.658Z] info: GET /dashboard 304  -
+[2024-09-13T03:41:21.505Z] info: GET /dashboard 304  -
+[2024-09-13T03:41:51.144Z] info: GET /dashboard 304  -
+[2024-09-13T03:41:57.801Z] info: GET /dashboard 304  -
+[2024-09-13T03:42:06.648Z] info: POST /auth/login 200 215 -
+[2024-09-13T03:42:11.766Z] info: GET /dashboard 304  -
+[2024-09-13T03:42:25.515Z] info: GET /dashboard 304  -
+[2024-09-13T03:47:58.823Z] info: GET /dashboard 304  -
+[2024-09-13T03:48:05.758Z] info: GET /dashboard 304  -
+[2024-09-13T03:48:54.987Z] info: POST /auth/login 200 215 -
+[2024-09-13T03:49:00.103Z] info: GET /dashboard 304  -
+[2024-09-13T03:49:31.977Z] info: GET /dashboard 304  -
+[2024-09-13T03:54:24.760Z] info: GET /dashboard 304  -
+[2024-09-13T03:55:40.679Z] info: GET /dashboard 304  -
+[2024-09-13T03:56:34.468Z] info: GET /dashboard 304  -
+[2024-09-13T03:56:53.101Z] info: GET /products? 304  -
+[2024-09-13T03:56:56.038Z] info: GET /products? 304  -
+[2024-09-13T03:56:57.663Z] info: GET /users 200 2352 -
+[2024-09-13T03:57:44.421Z] info: GET /expenses 304  -

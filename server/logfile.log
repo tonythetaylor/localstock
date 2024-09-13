@@ -1,0 +1,12 @@
+2024-09-13T00:50:57.677Z [info]: GET /users 304 - - 16.982 ms
+
+2024-09-13T00:50:59.441Z [info]: GET /dashboard 304 - - 15.588 ms
+
+2024-09-13T00:51:00.349Z [info]: GET /products? 304 - - 7.354 ms
+
+2024-09-13T00:51:01.079Z [info]: GET /products? 304 - - 1.798 ms
+
+2024-09-13T00:51:03.369Z [info]: GET /expenses 304 - - 7.600 ms
+
+2024-09-13T00:52:28.592Z [info]: GET /dashboard 304 - - 15.475 ms
+2024-09-13T00:52:30.738Z [info]: GET /users 304 - - 8.440 ms
