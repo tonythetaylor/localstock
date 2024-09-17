@@ -27,11 +27,11 @@ class AuthController {
     login(req, res, next) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const { accessToken, refreshToken } = yield this.authService.login(req.body);
+                const { accessToken, refreshToken, userId } = yield this.authService.login(req.body);
                 res
                     .cookie("jwt", refreshToken, COOKIE_OPTIONS)
                     .status(200)
-                    .send({ accessToken });
+                    .send({ accessToken, userId });
             }
             catch (err) {
                 next(err);

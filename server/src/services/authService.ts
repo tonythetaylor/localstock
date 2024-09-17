@@ -24,17 +24,18 @@ export default class AuthService {
     else user = await this.userService.getByKey("email", data.email);
     if (!user || !(await bcrypt.compare(data.password, user.password)))
       throw new HttpException(400, "Wrong credentials");
-    const { email, roles } = user;
+    const { email, roles, userId } = user;
+    console.log(userId)
     const { accessToken, refreshToken } = this.jwtService.genAuthTokens({ email, roles });
     await this.userService.update(user.userId, { refreshToken });
-    return { accessToken, refreshToken };
+    return { accessToken, refreshToken, userId };
   }
   async register(data: RegisterUserInput): Promise<AuthTokens> {
     const newUser = await this.userService.create(data);
-    const { email, roles } = newUser;
+    const { email, roles, userId } = newUser;
     const { accessToken, refreshToken } = this.jwtService.genAuthTokens({ email, roles });
     await this.userService.update(newUser.userId, { refreshToken });
-    return { accessToken, refreshToken };
+    return { accessToken, refreshToken, userId };
   }
   async refresh(refreshToken: string): Promise<{ accessToken: string }> {
     const user = await this.userService.getByKey("refreshToken", refreshToken);

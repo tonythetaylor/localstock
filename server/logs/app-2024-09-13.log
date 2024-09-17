@@ -111,3 +111,266 @@
 [2024-09-13T05:12:55.316Z] info: POST /auth/login 200 215 -
 [2024-09-13T05:13:00.463Z] info: GET /dashboard 304  -
 [2024-09-13T05:13:16.546Z] info: GET /dashboard 304  -
+[2024-09-13T05:25:26.082Z] info: GET /products? 304  -
+[2024-09-13T05:25:28.321Z] info: GET /products? 304  -
+[2024-09-13T05:25:29.854Z] info: GET /users 200 2352 -
+[2024-09-13T05:25:33.304Z] info: GET /expenses 304  -
+[2024-09-13T05:27:19.996Z] info: GET /dashboard 304  -
+[2024-09-13T05:27:21.851Z] info: GET /products? 304  -
+[2024-09-13T05:27:23.010Z] info: GET /products? 304  -
+[2024-09-13T05:27:24.017Z] info: GET /users 304  -
+[2024-09-13T05:42:08.370Z] info: GET /dashboard 304  -
+[2024-09-13T05:44:41.529Z] info: GET /dashboard 304  -
+[2024-09-13T05:45:01.303Z] info: GET /products? 304  -
+[2024-09-13T05:45:03.107Z] info: GET /products? 304  -
+[2024-09-13T05:45:04.396Z] info: GET /users 304  -
+[2024-09-13T05:45:06.575Z] info: GET /expenses 304  -
+[2024-09-13T05:46:25.209Z] info: POST /auth/login 200 215 -
+[2024-09-13T05:46:30.547Z] info: GET /dashboard 304  -
+[2024-09-13T05:48:32.593Z] info: GET /dashboard 304  -
+[2024-09-13T05:49:16.713Z] info: GET /dashboard 304  -
+[2024-09-13T05:51:53.186Z] info: GET /products? 304  -
+[2024-09-13T05:51:54.395Z] info: GET /products? 304  -
+[2024-09-13T05:51:56.097Z] info: GET /users 200 2352 -
+[2024-09-13T05:51:59.188Z] info: GET /expenses 304  -
+[2024-09-13T06:02:19.323Z] info: GET /dashboard 304  -
+[2024-09-13T06:03:58.990Z] error: GET / 404 1683 -
+[2024-09-13T06:03:58.991Z] info: GET / 404 1683 -
+[2024-09-13T06:12:26.410Z] info: GET /products? 304  -
+[2024-09-13T06:13:07.119Z] info: GET /dashboard 304  -
+[2024-09-13T06:13:30.104Z] info: GET /dashboard 304  -
+[2024-09-13T06:15:47.721Z] info: GET /products? 304  -
+[2024-09-13T06:15:52.070Z] info: GET /products? 304  -
+[2024-09-13T06:20:02.771Z] info: GET /products? 304  -
+[2024-09-13T06:20:04.975Z] info: GET /users 304  -
+[2024-09-13T06:20:07.503Z] info: GET /expenses 304  -
+[2024-09-13T06:20:09.060Z] info: GET /dashboard 304  -
+[2024-09-13T06:38:41.027Z] info: GET /dashboard 304  -
+[2024-09-13T06:49:03.478Z] info: GET /products? 304  -
+[2024-09-13T06:52:38.059Z] info: GET /dashboard 304  -
+[2024-09-13T08:00:10.272Z] info: GET /dashboard 304  -
+[2024-09-13T15:56:06.781Z] info: GET /products? 304  -
+[2024-09-13T15:56:07.747Z] info: GET /products? 304  -
+[2024-09-13T15:56:09.456Z] info: GET /users 304  -
+[2024-09-13T15:56:11.639Z] info: GET /expenses 304  -
+[2024-09-13T16:53:01.392Z] info: GET /products? 304  -
+[2024-09-13T16:53:03.006Z] info: GET /dashboard 304  -
+[2024-09-13T16:53:04.192Z] info: GET /products? 304  -
+[2024-09-13T18:04:56.108Z] error: GET / 404 1683 -
+[2024-09-13T18:04:56.109Z] info: GET / 404 1683 -
+[2024-09-13T18:10:14.926Z] info: GET /users 304  -
+[2024-09-13T18:25:28.147Z] info: POST /auth/login 200 215 -
+[2024-09-13T18:25:33.541Z] info: GET /dashboard 304  -
+[2024-09-13T18:26:08.346Z] info: GET /dashboard 304  -
+[2024-09-13T18:26:29.560Z] error: GET /cm02tkt390000fdwmmp3nckc8 404 1683 -
+[2024-09-13T18:26:29.560Z] info: GET /cm02tkt390000fdwmmp3nckc8 404 1683 -
+[2024-09-13T18:26:39.816Z] error: GET /yser/cm02tkt390000fdwmmp3nckc8 404 1683 -
+[2024-09-13T18:26:39.817Z] info: GET /yser/cm02tkt390000fdwmmp3nckc8 404 1683 -
+[2024-09-13T18:26:45.749Z] error: GET /user/cm02tkt390000fdwmmp3nckc8 404 1683 -
+[2024-09-13T18:26:45.750Z] info: GET /user/cm02tkt390000fdwmmp3nckc8 404 1683 -
+[2024-09-13T18:26:58.819Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 200 582 -
+[2024-09-13T18:26:58.848Z] error: GET /favicon.ico 404 1683 -
+[2024-09-13T18:26:58.848Z] info: GET /favicon.ico 404 1683 -
+[2024-09-13T18:39:02.953Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 304  -
+[2024-09-13T18:40:50.354Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 304  -
+[2024-09-13T18:40:51.322Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 304  -
+[2024-09-13T18:40:51.820Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 304  -
+[2024-09-13T18:41:00.233Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 14.410 ms
+[2024-09-13T18:41:00.234Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 14.410 ms
+[2024-09-13T18:41:13.273Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.662 ms
+[2024-09-13T18:41:13.273Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.662 ms
+[2024-09-13T18:43:20.629Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.275 ms
+[2024-09-13T18:43:20.629Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.275 ms
+[2024-09-13T18:43:22.180Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.018 ms
+[2024-09-13T18:43:22.180Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.018 ms
+[2024-09-13T18:43:23.008Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.720 ms
+[2024-09-13T18:43:23.009Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.720 ms
+[2024-09-13T18:43:26.788Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 1.746 ms
+[2024-09-13T18:43:26.788Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 1.746 ms
+[2024-09-13T18:43:56.809Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.321 ms
+[2024-09-13T18:43:56.810Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.321 ms
+[2024-09-13T18:43:57.990Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 2.184 ms
+[2024-09-13T18:43:57.991Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 2.184 ms
+[2024-09-13T18:43:58.585Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.571 ms
+[2024-09-13T18:43:58.586Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.571 ms
+[2024-09-13T18:43:59.041Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.842 ms
+[2024-09-13T18:43:59.042Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.842 ms
+[2024-09-13T18:44:06.525Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.142 ms
+[2024-09-13T18:44:06.525Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.142 ms
+[2024-09-13T18:45:44.908Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 18.727 ms
+[2024-09-13T18:45:44.909Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 18.727 ms
+[2024-09-13T18:46:09.030Z] info: GET /users 200 2352 - 5.349 ms
+[2024-09-13T18:48:39.620Z] error: GET /users/:id 500 35 - 3.030 ms
+[2024-09-13T18:48:39.620Z] info: GET /users/:id 500 35 - 3.030 ms
+[2024-09-13T18:52:09.249Z] error: GET /users/:id 500 35 - 2.920 ms
+[2024-09-13T18:52:09.249Z] info: GET /users/:id 500 35 - 2.920 ms
+[2024-09-13T19:06:26.460Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 37.266 ms
+[2024-09-13T19:06:26.463Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 37.266 ms
+[2024-09-13T19:12:51.164Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 10.135 ms
+[2024-09-13T19:12:51.165Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 10.135 ms
+[2024-09-13T19:13:21.125Z] info: POST /auth/login 200 215 - 84.975 ms
+[2024-09-13T19:13:26.519Z] info: GET /dashboard 304  - 14.785 ms
+[2024-09-13T19:13:31.586Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 2.383 ms
+[2024-09-13T19:13:31.586Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 2.383 ms
+[2024-09-13T19:13:46.128Z] info: GET /products? 304  - 9.847 ms
+[2024-09-13T19:13:48.340Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.126 ms
+[2024-09-13T19:13:48.340Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.126 ms
+[2024-09-13T19:16:17.736Z] info: POST /auth/login 200 215 - 72.099 ms
+[2024-09-13T19:16:22.857Z] info: GET /dashboard 304  - 4.048 ms
+[2024-09-13T19:16:25.026Z] info: GET /products? 304  - 1.997 ms
+[2024-09-13T19:16:26.873Z] info: GET /products? 304  - 1.687 ms
+[2024-09-13T19:16:29.003Z] info: GET /users 200 2352 - 2.263 ms
+[2024-09-13T19:16:31.440Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 1.901 ms
+[2024-09-13T19:16:31.440Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 1.901 ms
+[2024-09-13T19:17:57.192Z] info: GET /users 304  - 2.426 ms
+[2024-09-13T19:23:46.184Z] info: GET /dashboard 304  - 10.697 ms
+[2024-09-13T19:23:47.369Z] info: GET /products? 304  - 5.308 ms
+[2024-09-13T19:36:25.700Z] error: GET /users/:id 500 35 - 12.929 ms
+[2024-09-13T19:36:25.701Z] info: GET /users/:id 500 35 - 12.929 ms
+[2024-09-13T19:37:07.060Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.428 ms
+[2024-09-13T19:37:07.061Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.428 ms
+[2024-09-13T19:40:56.529Z] error: GET /users/:id 500 35 - 1.252 ms
+[2024-09-13T19:40:56.529Z] info: GET /users/:id 500 35 - 1.252 ms
+[2024-09-13T19:41:16.256Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.527 ms
+[2024-09-13T19:41:16.256Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.527 ms
+[2024-09-13T19:41:17.653Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.129 ms
+[2024-09-13T19:41:17.654Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.129 ms
+[2024-09-13T19:41:18.599Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.687 ms
+[2024-09-13T19:41:18.600Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.687 ms
+[2024-09-13T19:41:19.407Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.643 ms
+[2024-09-13T19:41:19.407Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.643 ms
+[2024-09-13T19:41:29.182Z] info: POST /auth/login 200 215 - 84.923 ms
+[2024-09-13T19:41:31.902Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.168 ms
+[2024-09-13T19:41:31.902Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.168 ms
+[2024-09-13T19:41:35.116Z] info: GET /dashboard 304  - 7.264 ms
+[2024-09-13T19:42:03.399Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 34.497 ms
+[2024-09-13T19:42:03.401Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 34.497 ms
+[2024-09-13T19:42:07.669Z] error: GET /users/:id 500 35 - 2.165 ms
+[2024-09-13T19:42:07.669Z] info: GET /users/:id 500 35 - 2.165 ms
+[2024-09-13T19:42:14.210Z] info: POST /auth/login 200 215 - 80.127 ms
+[2024-09-13T19:42:19.829Z] info: GET /dashboard 304  - 9.132 ms
+[2024-09-13T19:42:21.038Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 5.274 ms
+[2024-09-13T19:42:21.039Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 5.274 ms
+[2024-09-13T19:42:28.732Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.337 ms
+[2024-09-13T19:42:28.733Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.337 ms
+[2024-09-13T19:42:29.902Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.874 ms
+[2024-09-13T19:42:29.903Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.874 ms
+[2024-09-13T19:44:18.658Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 2.973 ms
+[2024-09-13T19:44:18.658Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 2.973 ms
+[2024-09-13T19:44:26.956Z] info: GET /products? 304  - 7.103 ms
+[2024-09-13T19:44:27.543Z] info: GET /products? 304  - 1.600 ms
+[2024-09-13T19:44:29.690Z] info: GET /users 200 2352 - 13.641 ms
+[2024-09-13T19:44:31.559Z] info: GET /expenses 304  - 19.613 ms
+[2024-09-13T19:44:32.338Z] error: GET /users/:id 500 35 - 1.381 ms
+[2024-09-13T19:44:32.338Z] info: GET /users/:id 500 35 - 1.381 ms
+[2024-09-13T19:45:58.066Z] info: GET /dashboard 304  - 2.679 ms
+[2024-09-13T19:45:58.528Z] info: GET /products? 304  - 1.744 ms
+[2024-09-13T19:45:59.970Z] info: GET /users 304  - 1.867 ms
+[2024-09-13T19:46:00.943Z] error: GET /users/:id 500 35 - 12.134 ms
+[2024-09-13T19:46:00.943Z] info: GET /users/:id 500 35 - 12.134 ms
+[2024-09-13T19:47:14.280Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.714 ms
+[2024-09-13T19:47:14.280Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.714 ms
+[2024-09-13T19:47:36.884Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 11.414 ms
+[2024-09-13T19:47:36.885Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 11.414 ms
+[2024-09-13T19:47:38.065Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 1.703 ms
+[2024-09-13T19:47:38.065Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 1.703 ms
+[2024-09-13T19:47:38.977Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.866 ms
+[2024-09-13T19:47:38.977Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.866 ms
+[2024-09-13T19:47:57.587Z] info: POST /auth/login 200 215 - 64.944 ms
+[2024-09-13T19:48:02.757Z] info: GET /dashboard 200 5074 - 2.798 ms
+[2024-09-13T19:48:27.034Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.212 ms
+[2024-09-13T19:48:27.034Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.212 ms
+[2024-09-13T19:49:42.896Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.816 ms
+[2024-09-13T19:49:42.897Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 3.816 ms
+[2024-09-13T19:50:52.859Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 11.450 ms
+[2024-09-13T19:50:52.859Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 11.450 ms
+[2024-09-13T19:51:43.598Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 7.096 ms
+[2024-09-13T19:51:43.598Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 7.096 ms
+[2024-09-13T19:51:56.413Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 29.794 ms
+[2024-09-13T19:51:56.414Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 29.794 ms
+[2024-09-13T19:52:28.690Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 6.546 ms
+[2024-09-13T19:52:28.691Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 6.546 ms
+[2024-09-13T19:52:30.779Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.944 ms
+[2024-09-13T19:52:30.780Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 4.944 ms
+[2024-09-13T19:52:42.297Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 25.752 ms
+[2024-09-13T19:52:42.298Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 25.752 ms
+[2024-09-13T19:52:52.877Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 5.535 ms
+[2024-09-13T19:52:52.878Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 5.535 ms
+[2024-09-13T19:54:42.543Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 7.057 ms
+[2024-09-13T19:54:42.543Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 7.057 ms
+[2024-09-13T19:55:31.974Z] error: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 30.989 ms
+[2024-09-13T19:55:31.976Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 500 35 - 30.989 ms
+[2024-09-13T19:55:48.428Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 200 573 - 22.083 ms
+[2024-09-13T19:57:06.017Z] info: GET /dashboard 304  - 11.242 ms
+[2024-09-13T19:57:11.928Z] info: GET /users/:id 200 4 - 9.785 ms
+[2024-09-13T19:58:03.176Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 304  - 3.829 ms
+[2024-09-13T19:58:33.681Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 304  - 3.609 ms
+[2024-09-13T20:06:21.666Z] info: GET /users/:id 304  - 7.233 ms
+[2024-09-13T20:06:44.346Z] info: GET /users/:id 304  - 3.141 ms
+[2024-09-13T20:07:05.496Z] info: GET /users/:id 304  - 1.600 ms
+[2024-09-13T20:09:29.045Z] info: GET /users/:id 304  - 2.680 ms
+[2024-09-13T20:09:39.254Z] info: POST /auth/login 200 215 - 68.456 ms
+[2024-09-13T20:09:45.509Z] info: GET /dashboard 304  - 11.573 ms
+[2024-09-13T20:10:55.605Z] info: GET /dashboard 304  - 3.669 ms
+[2024-09-13T20:11:03.572Z] info: GET /dashboard 304  - 18.442 ms
+[2024-09-13T20:11:05.621Z] info: GET /users/:id 304  - 1.523 ms
+[2024-09-13T20:11:11.994Z] info: POST /auth/login 200 215 - 70.810 ms
+[2024-09-13T20:11:17.112Z] info: GET /dashboard 304  - 4.195 ms
+[2024-09-13T20:12:52.275Z] info: GET /users/:id 304  - 1.224 ms
+[2024-09-13T20:12:59.016Z] info: POST /auth/login 200 215 - 77.438 ms
+[2024-09-13T20:13:04.128Z] info: GET /dashboard 304  - 3.670 ms
+[2024-09-13T20:14:18.880Z] info: GET /users/:id 304  - 1.337 ms
+[2024-09-13T20:18:00.219Z] info: POST /auth/login 200 215 - 61.209 ms
+[2024-09-13T20:18:05.337Z] info: GET /dashboard 304  - 7.729 ms
+[2024-09-13T20:18:19.127Z] info: GET /users/:id 304  - 1.189 ms
+[2024-09-13T20:18:31.493Z] info: POST /auth/login 200 215 - 81.578 ms
+[2024-09-13T20:18:36.595Z] info: GET /dashboard 304  - 2.777 ms
+[2024-09-13T20:20:51.593Z] info: GET /users/:id 304  - 1.295 ms
+[2024-09-13T20:21:01.727Z] info: POST /auth/login 200 215 - 76.373 ms
+[2024-09-13T20:21:06.839Z] info: GET /dashboard 304  - 3.707 ms
+[2024-09-13T20:39:55.563Z] info: GET /users/:id 304  - 8.386 ms
+[2024-09-13T20:40:02.297Z] info: POST /auth/login 200 265 - 82.663 ms
+[2024-09-13T20:40:07.415Z] info: GET /dashboard 304  - 15.103 ms
+[2024-09-13T20:46:41.469Z] info: GET /users/:id 304  - 17.285 ms
+[2024-09-13T20:46:48.741Z] info: POST /auth/login 200 975 - 89.980 ms
+[2024-09-13T20:46:54.135Z] info: GET /dashboard 304  - 10.830 ms
+[2024-09-13T20:47:51.612Z] info: GET /dashboard 304  - 9.101 ms
+[2024-09-13T20:48:01.791Z] error: GET / 404 1681 - 4.749 ms
+[2024-09-13T20:48:01.791Z] info: GET / 404 1681 - 4.749 ms
+[2024-09-13T20:48:52.507Z] info: GET /users/:id 304  - 1.598 ms
+[2024-09-13T20:49:00.187Z] info: POST /auth/login 200 1922 - 56.747 ms
+[2024-09-13T20:49:06.137Z] info: GET /dashboard 304  - 2.373 ms
+[2024-09-13T20:53:18.219Z] info: GET /users/:id 304  - 7.514 ms
+[2024-09-13T20:53:24.961Z] info: POST /auth/login 200 3222 - 85.378 ms
+[2024-09-13T20:53:30.086Z] info: GET /dashboard 304  - 10.190 ms
+[2024-09-13T21:22:36.990Z] info: GET /users/:id 304  - 25.515 ms
+[2024-09-13T21:22:47.136Z] info: POST /auth/login 200 4906 - 76.089 ms
+[2024-09-13T21:22:53.330Z] info: GET /dashboard 304  - 15.202 ms
+[2024-09-13T21:28:23.703Z] info: GET /dashboard 304  - 20.514 ms
+[2024-09-13T21:28:26.118Z] info: GET /users/:id 304  - 5.867 ms
+[2024-09-13T21:28:32.321Z] info: POST /auth/login 200 7151 - 88.312 ms
+[2024-09-13T21:28:37.442Z] info: GET /dashboard 304  - 5.022 ms
+[2024-09-13T21:31:18.627Z] info: GET /dashboard 304  - 5.375 ms
+[2024-09-13T21:32:11.774Z] info: GET /users/:id 304  - 2.295 ms
+[2024-09-13T21:32:18.095Z] info: POST /auth/login 200 10144 - 77.923 ms
+[2024-09-13T21:32:41.617Z] info: POST /auth/login 200 14135 - 55.393 ms
+[2024-09-13T21:34:21.537Z] info: POST /auth/login 200 19456 - 64.613 ms
+[2024-09-13T21:34:41.612Z] info: POST /auth/login 200 26551 - 66.956 ms
+[2024-09-13T21:34:54.010Z] info: POST /auth/login 200 36011 - 76.083 ms
+[2024-09-13T21:34:56.863Z] info: POST /auth/login 200 48624 - 84.038 ms
+[2024-09-13T21:35:06.045Z] info: POST /auth/login 200 65442 - 69.991 ms
+[2024-09-13T21:35:27.126Z] info: POST /auth/login 200 87866 - 71.573 ms
+[2024-09-13T21:35:41.540Z] info: POST /auth/login 200 117764 - 67.458 ms
+[2024-09-13T21:36:00.640Z] info: POST /auth/login 200 157628 - 69.075 ms
+[2024-09-13T21:36:24.929Z] info: POST /auth/login 200 210780 - 74.075 ms
+[2024-09-13T21:37:08.712Z] info: POST /auth/login 200 281650 - 78.644 ms
+[2024-09-13T21:37:47.934Z] info: POST /auth/login 200 376143 - 79.598 ms
+[2024-09-13T21:38:19.388Z] info: GET /dashboard 200 5074 - 14.846 ms
+[2024-09-13T21:38:22.006Z] info: GET /users/:id 200 4 - 6.785 ms
+[2024-09-13T21:38:28.324Z] info: POST /auth/login 200 502134 - 110.476 ms
+[2024-09-13T21:39:31.976Z] info: POST /auth/login 200 215 - 93.517 ms
+[2024-09-13T21:39:37.114Z] info: GET /dashboard 304  - 9.923 ms
+[2024-09-13T22:16:57.130Z] error: GET / 404 1681 - 15.746 ms
+[2024-09-13T22:16:57.131Z] info: GET / 404 1681 - 15.746 ms
+[2024-09-13T22:39:06.942Z] error: GET / 404 1681 - 3.064 ms
+[2024-09-13T22:39:06.942Z] info: GET / 404 1681 - 3.064 ms

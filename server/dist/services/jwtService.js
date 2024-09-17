@@ -26,7 +26,8 @@ class JwtService {
         const refreshToken = this.sign(payload, REFRESH_TOKEN_SECRET, {
             expiresIn: REFRESH_TOKEN_EXPIRY,
         });
-        return { accessToken, refreshToken };
+        const userId = '';
+        return { accessToken, refreshToken, userId };
     }
     verify(token, secret) {
         return __awaiter(this, void 0, void 0, function* () {

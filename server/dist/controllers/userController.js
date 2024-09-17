@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deleteUser = exports.updateUser = exports.create = exports.getUserById = exports.getAllUsers = exports.createUser = exports.getUsers = void 0;
+exports.deleteUser = exports.updateUser = exports.create = exports.getUserById = exports.getAllUsers = exports.createUser = exports.getPrismaUsersById = exports.getUsers = void 0;
 const userService_1 = __importDefault(require("../services/userService"));
 const users_1 = require("../db/users");
 const userService = new userService_1.default();
@@ -29,6 +29,23 @@ const getUsers = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.getUsers = getUsers;
+const getPrismaUsersById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const { id } = req.params;
+        const users = yield prisma.users.findUnique({
+            where: { userId: id }
+        });
+        // if (!users) {
+        //   // return new Response('User not found', { status: 404 });
+        //  res.status(404).json({ message: "User not found" });
+        // }
+        res.json(users);
+    }
+    catch (error) {
+        res.status(500).json({ message: "Error retrieving user" });
+    }
+});
+exports.getPrismaUsersById = getPrismaUsersById;
 const createUser = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const { email, password, name } = req.body;
     // const { productId, name, price, rating, stockQuantity } = req.body;

@@ -34,19 +34,20 @@ class AuthService {
                 user = yield this.userService.getByKey("email", data.email);
             if (!user || !(yield bcrypt_1.default.compare(data.password, user.password)))
                 throw new httpExceptions_1.HttpException(400, "Wrong credentials");
-            const { email, roles } = user;
+            const { email, roles, userId } = user;
+            console.log(userId);
             const { accessToken, refreshToken } = this.jwtService.genAuthTokens({ email, roles });
             yield this.userService.update(user.userId, { refreshToken });
-            return { accessToken, refreshToken };
+            return { accessToken, refreshToken, userId };
         });
     }
     register(data) {
         return __awaiter(this, void 0, void 0, function* () {
             const newUser = yield this.userService.create(data);
-            const { email, roles } = newUser;
+            const { email, roles, userId } = newUser;
             const { accessToken, refreshToken } = this.jwtService.genAuthTokens({ email, roles });
             yield this.userService.update(newUser.userId, { refreshToken });
-            return { accessToken, refreshToken };
+            return { accessToken, refreshToken, userId };
         });
     }
     refresh(refreshToken) {

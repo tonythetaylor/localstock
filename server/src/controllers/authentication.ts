@@ -18,12 +18,12 @@ export default class AuthController {
   }
   async login(req: Request, res: Response, next: NextFunction) {
     try {
-      const { accessToken, refreshToken } = await this.authService.login(req.body);
+      const { accessToken, refreshToken, userId } = await this.authService.login(req.body);
 
       res
         .cookie("jwt", refreshToken, COOKIE_OPTIONS)
         .status(200)
-        .send({ accessToken });
+        .send({ accessToken, userId });
     } catch (err) {
       next(err);
     }

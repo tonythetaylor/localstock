@@ -14,7 +14,7 @@ import { RegisterSchema } from "../src/schemas/register-schema"
 export async function getUserFromDb(phone: string, password: string) {
   try {
     const response = await axios.post(`http://localhost:8000/auth/login`, {phone: phone, password: password}).then((res) =>{
-    //    console.log(res.data)
+       console.log(res.data)
        return res.data
     }).catch(function (error) {
       console.log("[ERROR] ", error);

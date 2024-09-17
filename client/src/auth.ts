@@ -42,59 +42,43 @@ const authConfig: NextAuthConfig = {
         phone: {},
         password: {},
       },
-      async authorize(credentials) {
-        // console.log(credentials)
+      async authorize(credentials: any): Promise<any> {
         const { phone, password } = credentials
 
         const res = await getUserFromDb(phone as string, password as string)
         if (!res) return null;
-          // console.log('USER PASSWORD', res.data.accessToken)
-          // const passwordsMatch = await bcrypt.compare(password, user.password);
- 
-          if (res.data.accessToken) return res.data;
-
+        // const passwordsMatch = await bcrypt.compare(password, user.password);
+        const { userId, accessToken } = res.data;
+        // if (res.data.accessToken) return res.data;
+        if (res.data.accessToken) {
+          return {
+            userId: userId,
+            accessToken: accessToken,
+          };
+        }
 
         return null
       },
     }),
   ],
-  // callbacks: {
-  //   authorized({ auth, request: { nextUrl } }) {
-  //     // console.log('authorized : ', auth)
-  //     const isLoggedIn = !!auth?.user;
-  //     const isOnDashboard = nextUrl.pathname.startsWith('/');
-  //     if (isOnDashboard) {
-  //       if (isLoggedIn) return true;
-  //       return false; // Redirect unauthenticated users to login page
-  //     } else if (isLoggedIn) {
-  //       return Response.redirect(new URL('/', nextUrl));
-        
-  //     }
-  //     return true;
-  //   },
-  // },
-  jwt: {
-    encode: async function (params) {
-      if (params.token?.credentials) {
-        const sessionToken = uuid()
+  callbacks: {
+    jwt({ token, user, trigger, session }: any) {
+      // we have to make check on user, because The arguments user, account, profile are only passed
+      // the first time this callback is called on a new session, after the user signs in. In subsequent calls,
+      // only token will be available.
 
-        if (!params.token.sub) {
-          throw new Error("No user ID found in token")
-        }
-
-        const createdSession = await adapter?.createSession?.({
-          sessionToken: sessionToken,
-          userId: params.token.sub,
-          expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days
-        })
-
-        if (!createdSession) {
-          throw new Error("Failed to create session")
-        }
-
-        return sessionToken
+      // here r is some random value that we want to be present in token
+      if (user && user.userId) {
+          token.user = user;
       }
-      return defaultEncode(params)
+
+      return token;
+    },
+    session({ token, session, user }: any) {
+      if (session && session.user) {
+        session.user = token;
+      }
+      return session;
     },
   },
   secret: process.env.AUTH_TOKEN,

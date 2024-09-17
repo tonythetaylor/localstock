@@ -6,6 +6,7 @@ import { SessionProvider } from "next-auth/react"
 import DashboardWrapper from "./(dashboard)/dashboardWrapper";
 import { Suspense } from "react";
 import Loading from "./loading";
+import SessionWrapper from "./(components)/SessionWrapper/SessionWrapper";
 // import { auth } from "@/auth";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +24,10 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}     
+        <SessionWrapper>
+          {children}
+        </SessionWrapper>
+             
         {/* <DashboardWrapper>{children}</DashboardWrapper> */}
       </body>
     </html>

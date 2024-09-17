@@ -1,0 +1,71 @@
+[2024-09-17T01:51:51.964Z] info: GET /users/:id 304  - 8.735 ms
+[2024-09-17T01:51:58.546Z] info: GET /expenses 200 9555 - 12.565 ms
+[2024-09-17T02:14:58.189Z] info: GET /expenses 304  - 9.484 ms
+[2024-09-17T02:28:06.938Z] info: GET /users/:id 304  - 5.535 ms
+[2024-09-17T02:28:16.133Z] info: POST /auth/login 200 215 - 82.465 ms
+[2024-09-17T02:28:21.249Z] info: GET /dashboard 304  - 9.342 ms
+[2024-09-17T02:28:29.570Z] info: GET /users/:id 304  - 1.773 ms
+[2024-09-17T02:28:39.336Z] info: POST /auth/login 200 215 - 79.967 ms
+[2024-09-17T02:28:44.441Z] info: GET /dashboard 304  - 4.301 ms
+[2024-09-17T02:30:16.490Z] info: GET /users/:id 304  - 9.860 ms
+[2024-09-17T02:30:23.778Z] info: POST /auth/login 200 215 - 70.712 ms
+[2024-09-17T02:30:28.893Z] info: GET /dashboard 304  - 10.333 ms
+[2024-09-17T02:33:10.305Z] info: GET /users/:id 304  - 10.565 ms
+[2024-09-17T02:33:18.055Z] info: POST /auth/login 200 215 - 84.434 ms
+[2024-09-17T02:33:23.154Z] info: GET /dashboard 304  - 10.683 ms
+[2024-09-17T02:38:46.974Z] info: GET /users/:id 304  - 10.111 ms
+[2024-09-17T02:38:53.393Z] info: POST /auth/login 200 252 - 93.753 ms
+[2024-09-17T02:38:58.497Z] info: GET /dashboard 304  - 12.753 ms
+[2024-09-17T02:44:17.804Z] info: GET /users/:id 304  - 5.149 ms
+[2024-09-17T02:44:24.137Z] info: POST /auth/login 200 252 - 81.965 ms
+[2024-09-17T02:44:29.265Z] info: GET /dashboard 304  - 14.338 ms
+[2024-09-17T02:50:07.659Z] info: GET /users/:id 304  - 5.466 ms
+[2024-09-17T02:50:19.600Z] info: POST /auth/login 200 252 - 86.903 ms
+[2024-09-17T02:50:24.706Z] info: GET /dashboard 304  - 9.260 ms
+[2024-09-17T02:53:21.006Z] info: GET /users/:id 304  - 1.675 ms
+[2024-09-17T02:53:27.356Z] info: POST /auth/login 200 252 - 72.967 ms
+[2024-09-17T02:53:32.466Z] info: GET /dashboard 304  - 4.418 ms
+[2024-09-17T02:54:08.780Z] info: GET /users/:id 304  - 1.396 ms
+[2024-09-17T02:54:14.800Z] info: POST /auth/login 200 252 - 76.061 ms
+[2024-09-17T02:54:19.877Z] info: GET /dashboard 304  - 3.086 ms
+[2024-09-17T02:56:14.482Z] info: GET /users/:id 304  - 1.294 ms
+[2024-09-17T02:56:21.028Z] info: POST /auth/login 200 252 - 73.281 ms
+[2024-09-17T02:56:26.135Z] info: GET /dashboard 304  - 4.343 ms
+[2024-09-17T02:58:56.432Z] info: GET /dashboard 304  - 7.347 ms
+[2024-09-17T02:58:59.412Z] info: GET /users/:id 304  - 1.628 ms
+[2024-09-17T02:59:05.306Z] info: POST /auth/login 200 252 - 62.891 ms
+[2024-09-17T02:59:10.403Z] info: GET /dashboard 304  - 3.465 ms
+[2024-09-17T03:01:05.578Z] info: GET /dashboard 304  - 3.336 ms
+[2024-09-17T03:01:11.104Z] info: GET /dashboard 304  - 9.282 ms
+[2024-09-17T03:01:12.809Z] info: GET /users/:id 304  - 1.346 ms
+[2024-09-17T03:01:42.157Z] info: POST /auth/login 200 252 - 73.568 ms
+[2024-09-17T03:01:47.272Z] info: GET /dashboard 304  - 3.693 ms
+[2024-09-17T03:06:25.424Z] info: GET /dashboard 304  - 4.211 ms
+[2024-09-17T03:06:26.716Z] info: GET /users/:id 304  - 5.400 ms
+[2024-09-17T03:06:32.510Z] info: POST /auth/login 200 252 - 77.520 ms
+[2024-09-17T03:06:37.618Z] info: GET /dashboard 304  - 2.525 ms
+[2024-09-17T03:11:30.439Z] info: GET /dashboard 304  - 5.008 ms
+[2024-09-17T03:11:33.675Z] info: GET /users/:id 304  - 6.418 ms
+[2024-09-17T03:11:42.391Z] info: POST /auth/login 200 252 - 91.325 ms
+[2024-09-17T03:11:47.478Z] info: GET /dashboard 304  - 3.695 ms
+[2024-09-17T03:15:37.474Z] info: GET /users/:id 304  - 3.186 ms
+[2024-09-17T03:15:43.882Z] info: POST /auth/login 200 252 - 75.644 ms
+[2024-09-17T03:15:49.259Z] info: GET /dashboard 304  - 2.380 ms
+[2024-09-17T03:16:37.093Z] info: GET /dashboard 304  - 2.999 ms
+[2024-09-17T03:16:50.054Z] info: GET /users/:id 304  - 1.332 ms
+[2024-09-17T03:17:00.114Z] info: POST /auth/login 200 252 - 71.347 ms
+[2024-09-17T03:17:05.220Z] info: GET /dashboard 304  - 3.715 ms
+[2024-09-17T03:20:03.415Z] info: GET /users/:id 304  - 3.770 ms
+[2024-09-17T03:20:34.349Z] info: POST /auth/login 200 252 - 65.461 ms
+[2024-09-17T03:20:39.713Z] info: GET /dashboard 304  - 2.984 ms
+[2024-09-17T03:20:51.596Z] info: GET /dashboard 304  - 4.555 ms
+[2024-09-17T03:22:00.993Z] info: GET /users/:id 304  - 1.502 ms
+[2024-09-17T03:22:08.236Z] info: POST /auth/login 200 252 - 70.606 ms
+[2024-09-17T03:22:13.359Z] info: GET /dashboard 304  - 4.055 ms
+[2024-09-17T03:23:12.104Z] info: GET /users/:id 304  - 1.476 ms
+[2024-09-17T03:23:17.587Z] info: POST /auth/login 200 252 - 73.782 ms
+[2024-09-17T03:23:22.694Z] info: GET /dashboard 304  - 3.554 ms
+[2024-09-17T03:26:19.408Z] info: GET /dashboard 304  - 7.512 ms
+[2024-09-17T03:29:54.157Z] info: GET /users/:id 304  - 17.339 ms
+[2024-09-17T03:44:49.885Z] info: GET /users/:id 304  - 10.569 ms
+[2024-09-17T03:59:34.420Z] info: GET /users/:id 304  - 8.576 ms

@@ -13,7 +13,7 @@ const incomingMessage = (tokens: any, req: express.Request, res: express.Respons
         tokens.url(req, res),
         tokens.status(req, res),
         tokens.res(req, res, 'content-length'), '-',
-        tokens.res(req, res, 'response-time')
+        tokens['response-time'](req, res), 'ms'
     ].join(' ')
 }
 

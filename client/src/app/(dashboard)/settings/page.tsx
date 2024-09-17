@@ -3,14 +3,24 @@
 import React, { useState } from "react";
 import Header from "@/app/(components)/Header";
 import SignOutButton from "@/app/(components)/SignOutButton";
+import { useGetPrismaUsersByIdQuery } from "@/state/api";
+
 import { useSession } from "next-auth/react";
-// import { FormEvent } from 'react';
 
 type UserSetting = {
   label: string;
   value: string | boolean;
   type: "text" | "toggle";
 };
+
+export interface User {
+  userId?: string;
+  name: string;
+  email: string;
+  phone: string;
+  password: string;
+  accessToken: string
+}
 
 const mockSettings: UserSetting[] = [
   { label: "Username", value: "john_doe", type: "text" },
@@ -21,8 +31,13 @@ const mockSettings: UserSetting[] = [
 ];
 
 const Settings = () => {
+  // const session = await auth()
+  const { data: session, update } = useSession();
+  const { userId } = session?.user?.user
   const [userSettings, setUserSettings] = useState<UserSetting[]>(mockSettings);
-//  const session = useSession()
+  const { data: users, isError, isLoading } = useGetPrismaUsersByIdQuery(userId);
+ console.log(users)
+
   const handleToggleChange = (index: number) => {
     const settingsCopy = [...userSettings];
     settingsCopy[index].value = !settingsCopy[index].value as boolean;

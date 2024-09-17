@@ -51,7 +51,7 @@ export interface DashboardMetrics {
 }
 
 export interface User {
-  userId: string;
+  userId?: string;
   name: string;
   email: string;
   phone: string;
@@ -87,6 +87,10 @@ export const api = createApi({
       query: () => "/users",
       providesTags: ["Users"],
     }),
+    getPrismaUsersById: build.query<User[], void>({
+      query: (userId) => `/users/${userId}`,
+      providesTags: ["Users"]
+    }),
     getExpensesByCategory: build.query<ExpenseByCategorySummary[], void>({
       query: () => "/expenses",
       providesTags: ["Expenses"],
@@ -99,5 +103,6 @@ export const {
   useGetProductsQuery,
   useCreateProductMutation,
   useGetUsersQuery,
+  useGetPrismaUsersByIdQuery,
   useGetExpensesByCategoryQuery,
 } = api;

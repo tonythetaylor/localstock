@@ -1,0 +1,21 @@
+[2024-09-17T04:08:14.929Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 200 573 - 7.275 ms
+[2024-09-17T04:16:16.660Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 304  - 9.468 ms
+[2024-09-17T04:20:53.025Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 304  - 2.645 ms
+[2024-09-17T04:21:00.952Z] error: GET / 404 1681 - 4.258 ms
+[2024-09-17T04:21:00.952Z] info: GET / 404 1681 - 4.258 ms
+[2024-09-17T04:21:14.013Z] info: GET /users/cm02tkt390000fdwmmp3nckc8 304  - 2.757 ms
+[2024-09-17T04:29:01.090Z] info: GET /dashboard 304  - 13.715 ms
+[2024-09-17T04:29:11.211Z] info: GET /dashboard 304  - 4.093 ms
+[2024-09-17T04:34:28.914Z] error: POST /auth/login 400 503 - 9.533 ms
+[2024-09-17T04:34:28.915Z] info: POST /auth/login 400 503 - 9.533 ms
+[2024-09-17T04:34:50.864Z] error: POST /auth/login 400 503 - 2.639 ms
+[2024-09-17T04:34:50.865Z] info: POST /auth/login 400 503 - 2.639 ms
+[2024-09-17T04:35:00.915Z] error: POST /auth/login 400 503 - 2.698 ms
+[2024-09-17T04:35:00.915Z] info: POST /auth/login 400 503 - 2.698 ms
+[2024-09-17T04:35:22.582Z] error: POST /auth/login 400 503 - 1.997 ms
+[2024-09-17T04:35:22.582Z] info: POST /auth/login 400 503 - 1.997 ms
+[2024-09-17T04:35:23.832Z] error: POST /auth/login 400 503 - 2.108 ms
+[2024-09-17T04:35:23.832Z] info: POST /auth/login 400 503 - 2.108 ms
+[2024-09-17T04:39:26.608Z] error: POST /auth/register 500 1183 - 84.183 ms
+[2024-09-17T04:39:26.608Z] info: POST /auth/register 500 1183 - 84.183 ms
+[2024-09-17T04:39:50.580Z] info: POST /auth/register 201 207 - 81.851 ms

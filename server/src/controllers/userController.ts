@@ -18,6 +18,23 @@ export const getUsers = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
+export const getPrismaUsersById = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { id } = req.params
+    const users = await prisma.users.findUnique({
+      where: { userId: id}
+    });
+    // if (!users) {
+    //   // return new Response('User not found', { status: 404 });
+    //  res.status(404).json({ message: "User not found" });
+    // }
+
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ message: "Error retrieving user" });
+  }
+};
+
 export const createUser = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   const { email, password, name } = req.body
   // const { productId, name, price, rating, stockQuantity } = req.body;
